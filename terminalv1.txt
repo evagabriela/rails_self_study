@@ -1,0 +1,10 @@
+apprentice@dbc10 ~ $ rails new Todo
+apprentice@dbc10 ~ $ cd Todo/
+apprentice@dbc10 Todo $ subl .
+apprentice@dbc10 Todo $ rake db:create
+apprentice@dbc10 Todo $ rake db:migrate
+==  CreateItems: migrating ====================================================
+-- create_table(:items)
+   -> 0.0012s
+==  CreateItems: migrated (0.0013s) ===========================================
+apprentice@dbc10 Todo $ rails s
