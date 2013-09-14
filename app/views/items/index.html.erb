@@ -1,0 +1,7 @@
+<h1>All my Items</h1>
+<%=link_to "New", new_item_path %>
+<ul>
+  <% @items.each do |item| %>
+    <li><%=link_to item.name, item_path(item) %> (<%=item.description%>) <%=link_to "Edit", edit_item_path(item)%> <%= link_to "Destroy", item_path(item), :method => 'delete'%></li>
+  <%end%>
+</ul>
